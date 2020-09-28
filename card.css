@@ -40,3 +40,18 @@ body {
   background: #17141d;
   box-shadow: -1rem 0 3rem #000;
 }
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+/* GeneralSibling Selector
+Grab all sibling with the card class that come 
+after the element selected */
+.card:hover~.card {
+  transform: translateX(130px);
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
