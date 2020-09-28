@@ -10,3 +10,13 @@ body {
   display: flex;
   padding: 3rem;
 }
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+}
