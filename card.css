@@ -39,6 +39,7 @@ body {
   border-radius: 16px;
   background: #17141d;
   box-shadow: -1rem 0 3rem #000;
+  transition: 0.2s;
 }
 
 .card:hover {
@@ -52,6 +53,7 @@ after the element selected */
   transform: translateX(130px);
 }
 
+/* Select all but the first card and offset it backwards */
 .card:not(:first-child) {
   margin-left: -130px;
 }
