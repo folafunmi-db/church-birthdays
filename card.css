@@ -106,9 +106,14 @@ body {
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  align-items: center;
   font-size: small;
   font-weight: 700;
+}
+
+.bday {
+  width: 30%;
+  height: 30%;
 }
 
 .church-logo {
