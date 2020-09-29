@@ -20,8 +20,8 @@ body {
 .card-list::-webkit-scrollbar-thumb {
   background: #201c29;
   border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset 2px 2px 2px
-    rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .card-list::-webkit-scrollbar-track {
@@ -47,13 +47,45 @@ body {
 }
 
 /* GeneralSibling Selector
-Grab all sibling with the card class that come 
-after the element selected */
-.card:hover~.card {
+  Grab all sibling with the card class that come 
+  after the element selected */
+.card:hover ~ .card {
   transform: translateX(130px);
 }
 
-/* Select all but the first card and offset it backwards */
+/* Select all but the first card and offset it backwards
+  in the X plane */
 .card:not(:first-child) {
   margin-left: -130px;
 }
+
+.card-author {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  margin: 3rem 0 0;
+}
+
+.author-avatar img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin: 16px 10px;
+}
+
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: #ff8a00;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+
